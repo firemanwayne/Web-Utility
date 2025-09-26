@@ -1,16 +1,16 @@
-﻿namespace Web.Utility.Abstractions;
+﻿namespace Web.Utility.Abstractions.ViewModels;
 
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
 /// <summary>
-/// View mode base class. USE IF YOUR View model REQUIRES DROP DOWNS.
+/// View mode base class.
 /// </summary>
 public abstract class ListViewModelBase : INotifyPropertyChanged
 {
     public event PropertyChangedEventHandler? PropertyChanged;
 
-    public virtual List<string> ToolbarItems { get => new() { "Add", "Edit", "Delete", "Update", "Cancel" }; }
+    public virtual List<string> ToolbarItems { get => ["Add", "Edit", "Delete", "Update", "Cancel"]; }
 
     public void OnPropertyChanged([CallerMemberName] string property = "")
     {
@@ -19,7 +19,7 @@ public abstract class ListViewModelBase : INotifyPropertyChanged
 }
 
 /// <summary>
-/// View mode base class. DO NOT USE IF YOUR View model REQUIRES DROP DOWNS.
+/// View mode base class.
 /// </summary>
 /// <typeparam name="T"></typeparam>
 public abstract class ListViewModelBase<T> : ListViewModelBase where T : ViewModelBase
@@ -38,17 +38,13 @@ public abstract class ListViewModelBase<T> : ListViewModelBase where T : ViewMod
         OnPropertyChanged();
     }
 
-    public HashSet<T> ViewModels => _viewModels.OrderByDescending(a => a.UpdateDate).ToHashSet();
+    public HashSet<T> ViewModels => [.. _viewModels.OrderByDescending(a => a.UpdateDate)];
 
     public void AddViewModel(T model)
     {
         if (_viewModels.Add(model))
         {
             OnPropertyChanged();
-        }
-        else
-        {
-            Console.WriteLine("DUPLICATE");
         }
     }
 

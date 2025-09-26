@@ -1,4 +1,4 @@
-﻿namespace Web.Utility.Abstractions;
+﻿namespace Web.Utility.Abstractions.ViewModels;
 
 using System.ComponentModel;
 using System.ComponentModel.DataAnnotations;

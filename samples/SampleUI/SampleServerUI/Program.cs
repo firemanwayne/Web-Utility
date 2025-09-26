@@ -1,4 +1,4 @@
-using SampleUI.Components;
+using SampleServerUI.Components;
 
 using Web.Utility;
 
@@ -32,6 +32,7 @@ app
 
 app
     .MapRazorComponents<App>()
-    .AddInteractiveServerRenderMode();
+    .AddInteractiveServerRenderMode()
+    .AddAdditionalAssemblies();
 
 app.Run();

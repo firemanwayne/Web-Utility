@@ -1,6 +1,6 @@
 ﻿namespace Web.Utility.Interfaces;
 
-using Web.Utility.Abstractions;
+using Web.Utility.Abstractions.ViewModels;
 
 public interface IDataHandler<T> where T : IUpdateable
 {

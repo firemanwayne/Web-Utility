@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleDomainLibrary", "samp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web.Utility.UnitTests", "tests\UnitTests\Web.Utility.UnitTests\Web.Utility.UnitTests.csproj", "{51B25C6A-0A38-4D2E-936A-FDE1C17BCE08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleUI", "samples\SampleUI\SampleUI\SampleUI.csproj", "{3526FCBC-89CA-4361-93B6-FEF7B8038D3D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleServerUI", "samples\SampleUI\SampleServerUI\SampleServerUI.csproj", "{079D8F70-6FAB-109E-3D27-6B1B807087E8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -37,10 +37,10 @@ Global
 		{51B25C6A-0A38-4D2E-936A-FDE1C17BCE08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{51B25C6A-0A38-4D2E-936A-FDE1C17BCE08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{51B25C6A-0A38-4D2E-936A-FDE1C17BCE08}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3526FCBC-89CA-4361-93B6-FEF7B8038D3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3526FCBC-89CA-4361-93B6-FEF7B8038D3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3526FCBC-89CA-4361-93B6-FEF7B8038D3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3526FCBC-89CA-4361-93B6-FEF7B8038D3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{079D8F70-6FAB-109E-3D27-6B1B807087E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{079D8F70-6FAB-109E-3D27-6B1B807087E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{079D8F70-6FAB-109E-3D27-6B1B807087E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{079D8F70-6FAB-109E-3D27-6B1B807087E8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
